@@ -40,9 +40,9 @@ app.get('/', (req, res) => {
 
 app.get('/vip-lounge', (req, res) => {
   if (req.session.user) {
-    res.send(`Welcome to the party ${req.session.user.username}.`);
+    res.send(`Welcome to your pantry ${req.session.user.username}.`);
   } else {
-    res.send('Sorry, no guests allowed.');
+    res.send('Sorry, please log in.');
   }
 });
 
