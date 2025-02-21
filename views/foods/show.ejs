@@ -3,17 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
     <title><%= food.name %></title>
 </head>
 <body>
   <%- include('../partials/_navbar.ejs') %>
-  <h1><%= food.name %></h1>
+  <h1 class="food-list" ><%= food.name %></h1>
   
-  <a href="/users/<%= user._id %>/foods/<%= food._id %>/edit">Edit this Food Item</a>
+  <a class="edit-link" href="/users/<%= user._id %>/foods/<%= food._id %>/edit">Edit this Food Item</a>
 
   <form
       action="/users/<%= user._id %>/foods/<%= food._id %>?_method=DELETE" method="POST">
-      <button type="submit">Delete Pantry Item</button>
+      <button class="delete-button" type="submit">Delete Pantry Item</button>
     </form>
 
 </body>

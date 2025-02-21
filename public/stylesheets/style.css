@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Carter+One&family=IM+Fell+Great+Primer+SC&family=Permanent+Marker&display=swap');
+
+body {
+    font-family: 'IM Fell Great Primer SC', sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    background-color: #eef67a;
+  }
+
+  .index-body {
+    background-image: url('https://img.freepik.com/premium-photo/topdown-view-kitchen-table-with-ingredients-utensils-open-cookbook_645697-7955.jpg?w=1800');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100vw;
+    color: white;
+  }
+
+  .main-header {
+    font-weight: bold;
+    color: white;
+    font-size: 5.6em;
+    margin: 140px 80px 0 150px;
+  }
+
+  .auth-links {
+    font-size: 20px;
+    color: aliceblue;
+  }
+
+  .explore-link {
+    font-size: 25px;
+    color:rgb(246, 8, 12);
+  }
+
+  .singin-link, .signup-link {
+    font-size: 25px;
+    color:rgb(246, 8, 12);
+    display: flex;
+  }
+
+  .home-link {
+    font-size: 25px;
+    color: rgb(246, 8, 12);
+    display: flex;
+  }
+
+  .pantry-link {
+    font-size: 25px;
+    color: rgb(246, 8, 12);
+    display: flex;
+  }
+
+  .signout-link {
+    font-size: 25px;
+    color:rgb(246, 8, 12);
+    display: flex;
+  }
+
+  .pantry-header {
+    font-weight: bold;
+    color: rgb(19, 18, 18);
+    font-size: 40px;
+  }
+
+  .food-list {
+    font-family: 'Permanent Marker', sans-serif;
+    font-size: 28px;
+    color: rgb(186, 6, 246);
+  }
+
+  .add-item {
+    font-size: 25px;
+  }
+
+  .user-show {
+    font-size: 24px;
+  }
+
+  .user-food {
+    font-size: 22px;
+  }
+
+  .delete-button {
+    font-weight: bold;
+    background-color: rgb(246, 250, 250);
+    font-family: 'Carter One', sans-serif;
+    font-size: 18px;
+    border-radius: 12px;
+    border: 2px solid #1d1d1b;
+    color:#4204ed;
+  }
+
+  .delete-button:hover {
+    background-color: aqua;
+    cursor: pointer;
+  }
+
+  .delete-button:active {
+    background-color: #ee7132;
+  }
+
+  .edit-link {
+    font-family: 'Carter One', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color:#4204ed
+  }
+  
+  .edit-link:hover {
+    cursor: pointer;
+  }
