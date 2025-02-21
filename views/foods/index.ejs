@@ -9,5 +9,22 @@
   <body>
     <%- include('../partials/_navbar.ejs') %>
     <h1>Welcome to my Pantry</h1>
-  </body>
+    
+    
+    <% if (foods.length === 0) { %>
+        <p>There are no items in this pantry.</p>
+    <% } else { %>
+       <ul>
+            <% foods.forEach(food => { %>
+            <li>
+                <a href="/users/<%= user._id %>/foods/<%= food._id %>">
+                <%= food.name %>
+                </a>
+            </li>
+        <% }) %>
+       </ul>
+    <% } %>
+
+    <a href="/users/<%= user._id %>/foods/new" >Add an item to your Pantry</a>
+</body>
 </html>
